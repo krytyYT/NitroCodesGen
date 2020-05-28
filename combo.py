@@ -18,7 +18,6 @@ option = str(input("    [?] Generate codes with links? (Y/n): "))
 option2 = int(input("    [?] How many?: "))
 for x in range(option2):
     if option == "y":
-        print("tak to dziala xD")
         code = ('').join(random.choices(string.ascii_letters + string.digits, k=16))
         code = "https://discord.gift/" + code
         save(code)
